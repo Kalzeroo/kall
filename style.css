@@ -1,0 +1,282 @@
+ /* Resetting basic margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Styling Header */
+header {
+    background: linear-gradient(90deg, #fffb00, #b30000); /* Gradien merah keren */
+    color: #000; /* Warna hitam untuk teks */
+    padding: 40px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+}
+
+/* Mengubah font hanya untuk WIBU FOMO */
+header h1 {
+    font-family: 'Bangers', sans-serif;
+    font-size: 3.5em;  /* Ukuran font sedikit lebih besar */
+    text-align: left;
+    margin: 0;
+    color: #000000; /* Hitam yang elegan */
+}
+
+/* Main Navigation Styling */
+.main-nav {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.main-nav ul li {
+    display: inline;
+}
+
+.main-nav ul li a {
+    color: #fff;
+    font-size: 1.2em;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.main-nav ul li a:hover {
+    background-color: #b30000; /* Warna merah gelap saat hover */
+    border: 2px solid #ffffff;
+    color: #121212;
+}
+
+/* Main Navigation Styling */
+.main-nav {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.main-nav ul li {
+    display: inline;
+}
+
+.main-nav ul li a {
+    color: #fff;
+    font-size: 1.2em;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.main-nav ul li a:hover {
+    background-color: #b30000; /* Warna merah gelap saat hover */
+    border: 2px solid #fff;
+    color: #121212;
+}
+
+/* Main Navigation Styling */
+.main-nav {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.main-nav ul li {
+    display: inline;
+}
+
+.main-nav ul li a {
+    color: #000;
+    font-size: 1.2em;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.main-nav ul li a:hover {
+    background-color: #b30000; /* Warna merah gelap saat hover */
+    border: 2px solid #000;
+    color: #fff;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Styling Anime List */
+.anime-list {
+    padding: 40px 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    text-align: center;
+}
+
+.anime-list h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.anime-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Membuat 3 kolom */
+    grid-template-rows: repeat(2, auto); /* Membuat 2 baris */
+    gap: 20px;
+}
+
+.anime-item {
+    background-color: #ffffffef;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.anime-item img {
+    width: 100%;
+    height: 64%;
+    border-radius: 15px;
+}
+
+.anime-item h3 {
+    margin-top: 10px;
+    font-size: 1.5em;
+    color: #000000;
+}
+
+.anime-item p {
+    font-size: 1em;
+    color: #000000;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #800000; /* Biru tua */
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+/* Media Query untuk perangkat dengan lebar maksimal 768px (Tablet dan Mobile) */
+@media (max-width: 768px) {
+    /* Mengatur ukuran font header */
+    header h1 {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+    }
+
+    /* Navigasi menjadi vertikal */
+    .main-nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .main-nav ul li {
+        display: block;
+        text-align: center;
+    }
+
+    .anime-list h2 {
+        font-size: 2em;
+    }
+
+    .anime-items {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Kolom lebih kecil */
+        gap: 15px;
+    }
+
+    .anime-item h3 {
+        font-size: 1.2em;
+    }
+
+    .anime-item p {
+        font-size: 0.9em;
+    }
+}
+
+/* Media Query untuk perangkat dengan lebar maksimal 480px (Mobile) */
+@media (max-width: 480px) {
+    /* Mengatur ukuran font header lebih kecil */
+    header h1 {
+        font-size: 2em;
+        margin-bottom: 15px;
+    }
+
+    /* Navigasi lebih rapat */
+    .main-nav ul {
+        gap: 10px;
+    }
+
+    /* Anime List Title lebih kecil */
+    .anime-list h2 {
+        font-size: 1.8em;
+    }
+
+    /* Mengatur gambar anime untuk lebih responsif */
+    .anime-item img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Mengatur ukuran teks dalam anime-item */
+    .anime-item h3 {
+        font-size: 1.1em;
+    }
+
+    .anime-item p {
+        font-size: 0.8em;
+    }
+}
